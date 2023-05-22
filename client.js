@@ -1,11 +1,13 @@
-// establishes a connection with the game server
+const net = require("net");
+
+// Establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: 'localhost',
-    port: 3000,
+    host: "localhost",
+    port: 3001,
   });
 
-  // interpret incoming data as text
+  // Interpret incoming data as text
   conn.setEncoding("utf8");
 
   // Event handler for incoming data
@@ -13,7 +15,14 @@ const connect = function () {
     console.log("Message from server:", data);
   });
 
+  // Event handler for successful connection
+  conn.on("connect", () => {
+    console.log("Successfully connected to game server");
+    conn.write("Name: GR8"); // Send the name message
+  });
+
   return conn;
 };
 
 module.exports = connect; // Export the connect function
+
