@@ -3,7 +3,7 @@ const net = require("net");
 // Establishes a connection with the game server
 const connect = function () {
   const conn = net.createConnection({
-    host: "localhost",
+    host: '10.0.0.204',
     port: 50541,
   });
 
@@ -16,15 +16,14 @@ const connect = function () {
   });
 
   // Event handler for successful connection
-  conn.on("connect", () => {
+  conn.on("connect", (connect) => {
     console.log("Successfully connected to game server");
     conn.write("Name: GR8"); // Send the name message
-    // conn.write("Move: up"); // Commented out the "Move: up" command
-
+    //conn.write("Move: up"); // Commented out the "Move: up" command
   });
 
   return conn;
 };
 
-module.exports = connect; // Export the connect function
+module.exports = { connect };
 
