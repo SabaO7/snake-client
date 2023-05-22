@@ -4,7 +4,7 @@ const net = require("net");
 const connect = function () {
   const conn = net.createConnection({
     host: "localhost",
-    port: 3001,
+    port: 50541,
   });
 
   // Interpret incoming data as text
