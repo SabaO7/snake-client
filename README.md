@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["An image of the snake game"](/Users/SabaOji/Desktop/Screenshot 2023-05-21 at 11.01.24 PM.png)
+!["An image of the snake game"](./Screenshot 2023-05-21 at 11.01.24 PM.png)
 
 
 
