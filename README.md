@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["An image of the snake game"](#)image.png
+!["An image of the snake game"](image.png)
 
 
 
