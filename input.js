@@ -24,6 +24,12 @@ const handleUserInput = (key) => {
     }, 100);
   };
 
+  if (key === 'x') {
+    move("Move: wrong button!");
+  }  
+  if (key === '1') {
+    move("Move: what are you doing?");
+  }  
   if (key === 'w') {
     move("Move: up");
   }  
